@@ -78,3 +78,12 @@ window.addEventListener('scroll', revealOnScroll);
 // Run reveal check on page load to display elements already on screen
 window.addEventListener('DOMContentLoaded', revealOnScroll);
 window.addEventListener('load', revealOnScroll);
+
+// Floating WhatsApp Button Generator
+const whatsappBtn = document.createElement('a');
+whatsappBtn.href = "https://wa.me/917678466992?text=Hi%20Abhishek,%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect.";
+whatsappBtn.className = "whatsapp-float";
+whatsappBtn.target = "_blank";
+whatsappBtn.setAttribute('aria-label', 'Chat with Abhishek on WhatsApp');
+whatsappBtn.innerHTML = '<i class="fa-brands fa-whatsapp"></i>';
+document.body.appendChild(whatsappBtn);
