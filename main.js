@@ -48,3 +48,33 @@ if (themeToggleBtn) {
         }
     });
 }
+
+// Interactive Scroll Progress Bar
+const progressBar = document.createElement('div');
+progressBar.className = 'scroll-progress';
+document.body.appendChild(progressBar);
+
+window.addEventListener('scroll', () => {
+    const windowScroll = document.documentElement.scrollTop || document.body.scrollTop;
+    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrolled = (windowScroll / height) * 100;
+    progressBar.style.width = scrolled + '%';
+});
+
+// Scroll Reveal Effect for Elements
+const revealElements = document.querySelectorAll('section, .project-card, .timeline-item, .prof-card');
+const revealOnScroll = () => {
+    const triggerBottom = (window.innerHeight / 5) * 4.5;
+    revealElements.forEach(el => {
+        el.classList.add('reveal');
+        const elTop = el.getBoundingClientRect().top;
+        if (elTop < triggerBottom) {
+            el.classList.add('active');
+        }
+    });
+};
+
+window.addEventListener('scroll', revealOnScroll);
+// Run reveal check on page load to display elements already on screen
+window.addEventListener('DOMContentLoaded', revealOnScroll);
+window.addEventListener('load', revealOnScroll);
