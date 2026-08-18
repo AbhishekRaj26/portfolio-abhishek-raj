@@ -31,6 +31,36 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- FAQ Schema Markup for AEO (Answer Engine Optimization) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "How can I improve my Google Ads Search Impression Share?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "To improve Google Ads Search Impression Share, first diagnose if you are losing impressions to rank or budget. Resolve Lost IS (Rank) by raising your Quality Score (optimizing ad relevance, Expected CTR, and landing page load speeds) or increasing bids. Resolve Lost IS (Budget) by dayparting, narrowing targeting to high-converting locations, and using Exact Match keywords."
+        }
+      }, {
+        "@type": "Question",
+        "name": "When should I choose CBO over ABO in Meta Ads?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Choose ABO (Ad Set Budget Optimization) when testing new audiences or ad creatives to ensure all variables receive equal budget exposure. Switch to CBO (Campaign Budget Optimization) when scaling your proven winners, allowing Meta's real-time algorithms to distribute budgets to the most cost-effective ad sets."
+        }
+      }, {
+        "@type": "Question",
+        "name": "How does GA4 handle attribution modeling?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Google Analytics 4 (GA4) uses Data-Driven Attribution (DDA) as its default model. DDA uses machine learning algorithms to evaluate both converting and non-converting user paths and dynamically attributes conversion credit to the touchpoints that generated the highest incremental impact."
+        }
+      }]
+    }
+    </script>
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
@@ -74,11 +104,28 @@
     <section class="blog-list section-padding">
         <div class="container">
             <div class="projects-grid">
-                <!-- Blog 1 -->
+                <!-- Blog 1: Beco Campaign (Newest) -->
                 <div class="project-card">
                     <div class="project-info">
-                        <div class="project-meta">
+                        <div class="project-meta" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.85rem;">
+                            <span class="project-category">Case Study</span>
+                            <span style="font-size: 0.8rem; color: var(--text-muted); font-weight: 600;">August 15, 2026</span>
+                        </div>
+                        <h3 class="project-card-title">Beco Cleaner: D2C Campaign Analysis</h3>
+                        <p class="project-card-description">How a sustainable home care brand challenges industry giants through ingredient transparency and performance marketing.</p>
+                        <div class="project-stats-badge">Read Time: <strong>5 Mins</strong></div>
+                        <div class="project-links" style="margin-top: 1rem;">
+                            <a href="beco-cleaner-campaign-analysis.html"><i class="fa-solid fa-book-open"></i> Read Article</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog 2: Search Impression Share -->
+                <div class="project-card">
+                    <div class="project-info">
+                        <div class="project-meta" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.85rem;">
                             <span class="project-category">PPC Strategy</span>
+                            <span style="font-size: 0.8rem; color: var(--text-muted); font-weight: 600;">August 10, 2026</span>
                         </div>
                         <h3 class="project-card-title">Maximizing Search Impression Share</h3>
                         <p class="project-card-description">A deep dive into how to optimize your bidding strategy to win competitive keyword auctions on Google Ads without wasting budget.</p>
@@ -88,11 +135,13 @@
                         </div>
                     </div>
                 </div>
-                <!-- Blog 2 -->
+
+                <!-- Blog 3: Meta Ads CBO vs. ABO -->
                 <div class="project-card">
                     <div class="project-info">
-                        <div class="project-meta">
+                        <div class="project-meta" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.85rem;">
                             <span class="project-category">Meta Ads</span>
+                            <span style="font-size: 0.8rem; color: var(--text-muted); font-weight: 600;">August 5, 2026</span>
                         </div>
                         <h3 class="project-card-title">Meta Ads CBO vs. ABO Structures</h3>
                         <p class="project-card-description">Analyzing when to use Campaign Budget Optimization (CBO) versus Ad Set Budget Optimization (ABO) for testing vs. scaling ads.</p>
@@ -102,11 +151,13 @@
                         </div>
                     </div>
                 </div>
-                <!-- Blog 3 -->
+
+                <!-- Blog 4: GA4 Attribution -->
                 <div class="project-card">
                     <div class="project-info">
-                        <div class="project-meta">
+                        <div class="project-meta" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.85rem;">
                             <span class="project-category">Web Analytics</span>
+                            <span style="font-size: 0.8rem; color: var(--text-muted); font-weight: 600;">July 28, 2026</span>
                         </div>
                         <h3 class="project-card-title">GA4 Attribution Models Explained</h3>
                         <p class="project-card-description">Understanding data-driven attribution models in GA4 and how they help you allocate marketing budgets across multi-channel paths.</p>
@@ -116,19 +167,29 @@
                         </div>
                     </div>
                 </div>
-                <!-- Blog 4: Beco Campaign -->
-                <div class="project-card">
-                    <div class="project-info">
-                        <div class="project-meta">
-                            <span class="project-category">Case Study</span>
-                        </div>
-                        <h3 class="project-card-title">Beco Cleaner: D2C Campaign Analysis</h3>
-                        <p class="project-card-description">How a sustainable home care brand challenges industry giants through ingredient transparency and performance marketing.</p>
-                        <div class="project-stats-badge">Read Time: <strong>5 Mins</strong></div>
-                        <div class="project-links" style="margin-top: 1rem;">
-                            <a href="beco-cleaner-campaign-analysis.html"><i class="fa-solid fa-book-open"></i> Read Article</a>
-                        </div>
-                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section for AEO -->
+    <section class="faq section-padding" id="faq" style="background-color: var(--bg-surface); border-top: 1px solid var(--border-color);">
+        <div class="container" style="max-width: 850px;">
+            <div class="section-header" style="text-align: center; margin-bottom: 4rem;">
+                <span class="section-tag">FAQ</span>
+                <h2 class="section-title">Growth Marketing FAQs</h2>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 2rem;">
+                <div class="prof-card">
+                    <h4 style="font-size: 1.2rem; margin-bottom: 0.75rem; color: var(--primary-color);">How can I improve my Google Ads Search Impression Share?</h4>
+                    <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.7;">To improve Google Ads Search Impression Share, first diagnose if you are losing impressions to rank or budget. Resolve Lost IS (Rank) by raising your Quality Score (optimizing ad relevance, Expected CTR, and landing page load speeds) or increasing bids. Resolve Lost IS (Budget) by dayparting, narrowing targeting to high-converting locations, and using Exact Match keywords.</p>
+                </div>
+                <div class="prof-card">
+                    <h4 style="font-size: 1.2rem; margin-bottom: 0.75rem; color: var(--primary-color);">When should I choose CBO over ABO in Meta Ads?</h4>
+                    <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.7;">Choose ABO (Ad Set Budget Optimization) when testing new audiences or ad creatives to ensure all variables receive equal budget exposure. Switch to CBO (Campaign Budget Optimization) when scaling your proven winners, allowing Meta's real-time algorithms to distribute budgets to the most cost-effective ad sets.</p>
+                </div>
+                <div class="prof-card">
+                    <h4 style="font-size: 1.2rem; margin-bottom: 0.75rem; color: var(--primary-color);">How does GA4 handle attribution modeling?</h4>
+                    <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.7;">Google Analytics 4 (GA4) uses Data-Driven Attribution (DDA) as its default model. DDA uses machine learning algorithms to evaluate both converting and non-converting user paths and dynamically attributes conversion credit to the touchpoints that generated the highest incremental impact.</p>
                 </div>
             </div>
         </div>
