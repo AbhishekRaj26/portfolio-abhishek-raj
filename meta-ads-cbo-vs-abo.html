@@ -31,6 +31,36 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- FAQ Schema Markup for AEO (Answer Engine Optimization) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "What is the difference between CBO and ABO in Meta Ads?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Campaign Budget Optimization (CBO) allocates the budget at the campaign level, letting Meta's machine learning distribute spend in real-time to the best-performing ad sets. Ad Set Budget Optimization (ABO) allocates budgets to individual ad sets, giving you absolute control over spend splits."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Should I use CBO or ABO for creative testing?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You should use ABO for creative testing. This ensures that Meta distributes budget equally across all your testing variables, rather than prematurely funneling all spend to a single ad set."
+        }
+      }, {
+        "@type": "Question",
+        "name": "When is the best time to scale a campaign using CBO?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Switch to CBO when scaling proven, high-performing creatives and audiences. This allows Meta's algorithm the flexibility to shift budget dynamically to maintain high efficiency and protect your ROAS."
+        }
+      }]
+    }
+    </script>
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
@@ -114,6 +144,25 @@
 
             <h2 style="font-size: 1.85rem; margin: 3rem 0 1.25rem; font-weight: 800;">Summary & Best Practices</h2>
             <p style="margin-bottom: 1.75rem; color: var(--text-muted); line-height: 1.8;">In summary, use ABO for testing new audiences and ad creatives, and for protecting small remarketing lists. Use CBO for scaling your proven winners. By organizing your ad account this way, you avoid wasting budget on unproven ads and give Meta's algorithm the space it needs to drive consistent, profitable growth.</p>
+
+            <!-- FAQ Section for AEO -->
+            <div class="faq-container" style="margin-top: 5rem; border-top: 1px solid var(--border-color); padding-top: 4rem;">
+                <h3 style="font-size: 1.65rem; margin-bottom: 2rem; font-weight: 800;">Frequently Asked Questions</h3>
+                <div style="display: flex; flex-direction: column; gap: 2rem;">
+                    <div class="prof-card" style="padding: 2rem;">
+                        <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; color: var(--primary-color);">What is the difference between CBO and ABO in Meta Ads?</h4>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">Campaign Budget Optimization (CBO) allocates the budget at the campaign level, letting Meta's machine learning distribute spend in real-time to the best-performing ad sets. Ad Set Budget Optimization (ABO) allocates budgets to individual ad sets, giving you absolute control over spend splits.</p>
+                    </div>
+                    <div class="prof-card" style="padding: 2rem;">
+                        <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; color: var(--primary-color);">Should I use CBO or ABO for creative testing?</h4>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">You should use ABO for creative testing. This ensures that Meta distributes budget equally across all your testing variables, rather than prematurely funneling all spend to a single ad set.</p>
+                    </div>
+                    <div class="prof-card" style="padding: 2rem;">
+                        <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; color: var(--primary-color);">When is the best time to scale a campaign using CBO?</h4>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">Switch to CBO when scaling proven, high-performing creatives and audiences. This allows Meta's algorithm the flexibility to shift budget dynamically to maintain high efficiency and protect your ROAS.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </article>
 

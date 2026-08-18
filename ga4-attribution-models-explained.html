@@ -31,6 +31,36 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- FAQ Schema Markup for AEO (Answer Engine Optimization) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "How does GA4's Data-Driven Attribution model work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "GA4's Data-Driven Attribution uses machine learning to analyze both converting and non-converting paths. It evaluates how the presence of specific touchpoints affects conversion likelihood and dynamically distributes credit accordingly."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Why did Google retire First-Click and Time Decay models in GA4?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Google retired rules-based models because static math formulas fail to reflect complex, real-world user paths. Machine-modeled data (like Data-Driven Attribution) is more accurate and complies better with user privacy updates."
+        }
+      }, {
+        "@type": "Question",
+        "name": "How can I compare conversion credit across different attribution models in GA4?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Use the Model Comparison Tool in the GA4 Advertising workspace. This tool allows you to compare Data-Driven attribution against Last Click to identify which channels are driving top-of-funnel discovery vs. closing conversions."
+        }
+      }]
+    }
+    </script>
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
@@ -108,6 +138,25 @@
 
             <h2 style="font-size: 1.85rem; margin: 3rem 0 1.25rem; font-weight: 800;">Summary & Optimization Roadmap</h2>
             <p style="margin-bottom: 1.75rem; color: var(--text-muted); line-height: 1.8;">To maximize your return, set your GA4 property's reporting attribution to Data-Driven. Perform a bi-weekly review using the Model Comparison tool to identify underperforming final-click channels that are actually driving crucial top-of-funnel interest, and adjust your ad budgets accordingly. By moving away from last-click measurements, you gain a accurate view of your cross-channel marketing and scale more profitably.</p>
+
+            <!-- FAQ Section for AEO -->
+            <div class="faq-container" style="margin-top: 5rem; border-top: 1px solid var(--border-color); padding-top: 4rem;">
+                <h3 style="font-size: 1.65rem; margin-bottom: 2rem; font-weight: 800;">Frequently Asked Questions</h3>
+                <div style="display: flex; flex-direction: column; gap: 2rem;">
+                    <div class="prof-card" style="padding: 2rem;">
+                        <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; color: var(--primary-color);">How does GA4's Data-Driven Attribution model work?</h4>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">GA4's Data-Driven Attribution uses machine learning to analyze both converting and non-converting paths. It evaluates how the presence of specific touchpoints affects conversion likelihood and dynamically distributes credit accordingly.</p>
+                    </div>
+                    <div class="prof-card" style="padding: 2rem;">
+                        <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; color: var(--primary-color);">Why did Google retire First-Click and Time Decay models in GA4?</h4>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">Google retired rules-based models because static math formulas fail to reflect complex, real-world user paths. Machine-modeled data (like Data-Driven Attribution) is more accurate and complies better with user privacy updates.</p>
+                    </div>
+                    <div class="prof-card" style="padding: 2rem;">
+                        <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; color: var(--primary-color);">How can I compare conversion credit across different attribution models in GA4?</h4>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">Use the Model Comparison Tool in the GA4 Advertising workspace. This tool allows you to compare Data-Driven attribution against Last Click to identify which channels are driving top-of-funnel discovery vs. closing conversions.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </article>
 

@@ -31,6 +31,36 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- FAQ Schema Markup for AEO (Answer Engine Optimization) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "What is Search Impression Share (SIS) in Google Ads?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Search Impression Share is the percentage of impressions your ads received compared to the total number of impressions your ads were eligible to receive based on target parameters, bids, and Quality Scores."
+        }
+      }, {
+        "@type": "Question",
+        "name": "How do I fix low Search Impression Share due to rank?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Resolve Lost IS (Rank) by raising your Quality Score. This is done by increasing expected CTR with better headlines and assets, improving landing page relevance and speed, or adjusting bid strategies (e.g. Target Impression Share)."
+        }
+      }, {
+        "@type": "Question",
+        "name": "How do I fix Search Lost IS due to budget?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "To reduce Lost IS (Budget) without increasing spend, narrow your targeting parameters: apply dayparting ad schedules, restrict location targeting to high-converting cities, and consolidate broad match keywords into Exact/Phrase match."
+        }
+      }]
+    }
+    </script>
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
@@ -122,6 +152,25 @@
 
             <h2 style="font-size: 1.85rem; margin: 3rem 0 1.25rem; font-weight: 800;">Summary & Checklist for Weekly Audits</h2>
             <p style="margin-bottom: 1.75rem; color: var(--text-muted); line-height: 1.8;">To maintain healthy search campaigns, make SIS checks a core part of your weekly optimization routine. Look for ad groups with less than 70% Search IS. If lost to budget, refine parameters or scale budget. If lost to rank, rewrite ads, verify landing page speed, and review auction keyword matches. By systematically addressing these bottlenecks, you will maximize conversion efficiency and capture your entire market opportunity.</p>
+
+            <!-- FAQ Section for AEO -->
+            <div class="faq-container" style="margin-top: 5rem; border-top: 1px solid var(--border-color); padding-top: 4rem;">
+                <h3 style="font-size: 1.65rem; margin-bottom: 2rem; font-weight: 800;">Frequently Asked Questions</h3>
+                <div style="display: flex; flex-direction: column; gap: 2rem;">
+                    <div class="prof-card" style="padding: 2rem;">
+                        <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; color: var(--primary-color);">What is Search Impression Share (SIS) in Google Ads?</h4>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">Search Impression Share is the percentage of impressions your ads received compared to the total number of impressions your ads were eligible to receive based on target parameters, bids, and Quality Scores.</p>
+                    </div>
+                    <div class="prof-card" style="padding: 2rem;">
+                        <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; color: var(--primary-color);">How do I fix low Search Impression Share due to rank?</h4>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">Resolve Lost IS (Rank) by raising your Quality Score. This is done by increasing expected CTR with better headlines and assets, improving landing page relevance and speed, or adjusting bid strategies (e.g. Target Impression Share).</p>
+                    </div>
+                    <div class="prof-card" style="padding: 2rem;">
+                        <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; color: var(--primary-color);">How do I fix Search Lost IS due to budget?</h4>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">To reduce Lost IS (Budget) without increasing spend, narrow your targeting parameters: apply dayparting ad schedules, restrict location targeting to high-converting cities, and consolidate broad match keywords into Exact/Phrase match.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </article>
 
