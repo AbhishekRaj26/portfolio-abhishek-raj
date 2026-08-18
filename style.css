@@ -619,6 +619,26 @@ a {
     color: hsl(350, 80%, 60%);
 }
 
+/* Mini Hero (Internal Pages) */
+.hero-mini {
+    padding: 10rem 0 4rem;
+    background-color: var(--bg-surface);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.mini-hero-title {
+    font-size: 2.75rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    letter-spacing: -0.03em;
+}
+
+.mini-hero-subtitle {
+    font-size: 1.15rem;
+    color: var(--text-muted);
+    max-width: 600px;
+}
+
 /* Responsive Styles */
 @media (max-width: 900px) {
     .about-grid,
