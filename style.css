@@ -866,3 +866,47 @@ a {
         font-size: 26px;
     }
 }
+
+/* Consultation Section Styles */
+.consultation-section {
+    background-color: var(--bg-surface-hover);
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.consultation-grid {
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.audit-benefits {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.audit-benefits li {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.05rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+.audit-benefits li i {
+    color: var(--primary-color);
+    font-size: 1.35rem;
+    margin-top: 0.15rem;
+}
+
+@media (max-width: 992px) {
+    .consultation-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+}
