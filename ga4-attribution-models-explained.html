@@ -21,8 +21,8 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Abhishek Raj - Digital Growth Blog. Insightful articles on PPC, Meta Ads, GA4, and Conversion Rate Optimization.">
-    <title>Blog | Abhishek Raj</title>
+    <meta name="description" content="GA4 Attribution Models Explained - Analytics Strategy by Abhishek Raj.">
+    <title>GA4 Attribution Models Explained | Blog | Abhishek Raj</title>
     <!-- Google Fonts: Plus Jakarta Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -48,7 +48,7 @@
                 <a href="experience.html" class="nav-link">Experience</a>
                 <a href="certifications.html" class="nav-link">Certifications</a>
                 <a href="blog.html" class="nav-link active">Blog</a>
-                <a href="index.html#contact" class="nav-link">Contact</a>
+                <a href="#contact" class="nav-link">Contact</a>
                 <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark/light theme">
                     <i class="fa-solid fa-moon"></i>
                 </button>
@@ -61,64 +61,34 @@
         </div>
     </nav>
 
-    <!-- Blog Header -->
+    <!-- Blog Article Header -->
     <section class="hero-mini">
         <div class="container">
-            <span class="section-tag">Insights</span>
-            <h1 class="mini-hero-title">Growth Marketing Insights</h1>
-            <p class="mini-hero-subtitle">Articles, guides, and strategic breakdowns of PPC, CRO, and analytics concepts.</p>
+            <span class="section-tag">Web Analytics</span>
+            <h1 class="mini-hero-title">GA4 Attribution Models Explained</h1>
+            <p class="mini-hero-subtitle">Understanding data-driven attribution models in GA4 and how they help you allocate marketing budgets across multi-channel paths.</p>
         </div>
     </section>
 
-    <!-- Blog Grid -->
-    <section class="blog-list section-padding">
-        <div class="container">
-            <div class="projects-grid">
-                <!-- Blog 1 -->
-                <div class="project-card">
-                    <div class="project-info">
-                        <div class="project-meta">
-                            <span class="project-category">PPC Strategy</span>
-                        </div>
-                        <h3 class="project-card-title">Maximizing Search Impression Share</h3>
-                        <p class="project-card-description">A deep dive into how to optimize your bidding strategy to win competitive keyword auctions on Google Ads without wasting budget.</p>
-                        <div class="project-stats-badge">Read Time: <strong>5 Mins</strong></div>
-                        <div class="project-links" style="margin-top: 1rem;">
-                            <a href="maximizing-search-impression-share.html"><i class="fa-solid fa-book-open"></i> Read Article</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Blog 2 -->
-                <div class="project-card">
-                    <div class="project-info">
-                        <div class="project-meta">
-                            <span class="project-category">Meta Ads</span>
-                        </div>
-                        <h3 class="project-card-title">Meta Ads CBO vs. ABO Structures</h3>
-                        <p class="project-card-description">Analyzing when to use Campaign Budget Optimization (CBO) versus Ad Set Budget Optimization (ABO) for testing vs. scaling ads.</p>
-                        <div class="project-stats-badge">Read Time: <strong>7 Mins</strong></div>
-                        <div class="project-links" style="margin-top: 1rem;">
-                            <a href="meta-ads-cbo-vs-abo.html"><i class="fa-solid fa-book-open"></i> Read Article</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Blog 3 -->
-                <div class="project-card">
-                    <div class="project-info">
-                        <div class="project-meta">
-                            <span class="project-category">Web Analytics</span>
-                        </div>
-                        <h3 class="project-card-title">GA4 Attribution Models Explained</h3>
-                        <p class="project-card-description">Understanding data-driven attribution models in GA4 and how they help you allocate marketing budgets across multi-channel paths.</p>
-                        <div class="project-stats-badge">Read Time: <strong>6 Mins</strong></div>
-                        <div class="project-links" style="margin-top: 1rem;">
-                            <a href="ga4-attribution-models-explained.html"><i class="fa-solid fa-book-open"></i> Read Article</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- Blog Content -->
+    <article class="blog-post-content section-padding">
+        <div class="container" style="max-width: 800px;">
+            <img src="images/ga4_attribution.jpg" alt="Multi-channel attribution and conversion pathways flowchart mapping paid search, social media, email, organic search, and display ads to customer intent funnel and conversions" style="width: 100%; border-radius: var(--radius-md); margin-bottom: 2.5rem; border: 1px solid var(--border-color);">
+            
+            <p style="font-size: 1.15rem; margin-bottom: 1.5rem; font-weight: 500;">Attribution modeling in Google Analytics 4 (GA4) determines how credit for conversion events is distributed across the touchpoints in a customer's journey.</p>
+            
+            <p style="margin-bottom: 1.5rem; color: var(--text-muted);">A customer rarely converts on their first visit. They might find your business via Google Search, return via a Meta retargeting ad, and finally purchase after clicking an email newsletter. Understanding which channel gets the credit is the key to optimizing your ad spend.</p>
+            
+            <h2 style="font-size: 1.75rem; margin: 2.5rem 0 1rem;">1. Data-Driven Attribution (DDA)</h2>
+            <p style="margin-bottom: 1.5rem; color: var(--text-muted);">GA4's default model is **Data-Driven Attribution**. Unlike static models, DDA uses Google's machine learning algorithms to analyze all conversion paths in your account. It evaluates both converting and non-converting journeys to calculate how much incremental value each touchpoint contributed. DDA is highly accurate because it adapts specifically to your actual user behavior patterns.</p>
+            
+            <h2 style="font-size: 1.75rem; margin: 2.5rem 0 1rem;">2. The Transition: Goodbye Last Click</h2>
+            <p style="margin-bottom: 1.5rem; color: var(--text-muted);">Google recently retired old rules-based models (First Click, Linear, Time Decay, and Position-Based) in GA4. Now, the main comparison models left are **Data-Driven** and **Last Click**. While Last Click gives 100% of the credit to the very last channel the user interacted with, it ignores the top-of-funnel channels that introduced the user to your brand in the first place.</p>
+            
+            <h2 style="font-size: 1.75rem; margin: 2.5rem 0 1rem;">3. Actionable Insights from Attribution</h2>
+            <p style="margin-bottom: 1.5rem; color: var(--text-muted);">By utilizing the **Model Comparison Tool** under GA4's Advertising workspace, you can compare Last Click with Data-Driven attribution. If you notice that your organic search or generic paid keywords have a significantly higher conversion credit under Data-Driven than Last Click, it indicates those channels are crucial top-of-funnel drivers. You should increase budgets there, even if direct Last Click metrics seem low.</p>
         </div>
-    </section>
+    </article>
 
     <!-- Footer -->
     <footer class="footer">
